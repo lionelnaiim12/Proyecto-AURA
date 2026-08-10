@@ -1,0 +1,57 @@
+@use "../base/variables" as *;
+
+/*==========================================
+                MIXINS
+==========================================*/
+
+@mixin flex($justify:center, $align:center){
+
+    display:flex;
+    justify-content:$justify;
+    align-items:$align;
+
+}
+
+@mixin boton{
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:1.4rem 3.5rem;
+
+    border:1px solid $dorado;
+    border-radius:999px;
+
+    background:transparent;
+
+    color:$dorado;
+
+    font-size:1.6rem;
+
+    font-weight:600;
+
+    transition:$transicion;
+
+    &:hover{
+
+        background:$dorado;
+        color:$fondo;
+
+        transform:translateY(-3px);
+
+    }
+
+}
+
+@mixin titulo{
+
+    color:$dorado;
+
+    font-size:5rem;
+
+    font-style:italic;
+
+    text-align:center;
+
+}

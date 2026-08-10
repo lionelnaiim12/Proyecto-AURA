@@ -1,0 +1,158 @@
+@use "../base/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as *;
+
+/*==========================================
+                CARTA
+==========================================*/
+
+.heroCarta{
+
+    width:80%;
+
+    margin:7rem auto;
+
+    text-align:center;
+
+    h2{
+
+        font-size:5rem;
+
+        color:$dorado;
+
+        font-style:italic;
+
+        margin-bottom:2rem;
+
+    }
+
+    p{
+
+        color:$gris;
+
+        font-size:2rem;
+
+        line-height:1.8;
+
+    }
+
+}
+
+.gridCarta{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:3rem;
+
+}
+
+.cardCafe{
+
+    @extend %card;
+
+    overflow:hidden;
+
+    &:hover{
+
+        transform:translateY(-12px);
+
+        border-color:$dorado;
+
+    }
+
+    img{
+
+        width:100%;
+
+        height:270px;
+
+        object-fit:cover;
+
+        transition:$transicion;
+
+    }
+
+    &:hover img{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+.contenidoCard{
+
+    padding:2.5rem;
+
+    text-align:center;
+
+    h3{
+
+        color:$dorado;
+
+        font-size:2.8rem;
+
+        margin-bottom:1.5rem;
+
+    }
+
+    p{
+
+        color:$gris;
+
+        font-size:1.7rem;
+
+        line-height:1.7;
+
+        margin-bottom:2rem;
+
+    }
+
+    span{
+
+        display:block;
+
+        color:$dorado-claro;
+
+        font-size:2.5rem;
+
+        margin-bottom:2rem;
+
+        font-weight:bold;
+
+    }
+
+}
+
+.btnAura{
+
+    @include boton;
+
+}
+@media(max-width:992px){
+
+    .gridCarta{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .gridCarta{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

@@ -1,0 +1,59 @@
+@use "variables" as *;
+
+/*==========================================
+            ESTILOS GENERALES
+==========================================*/
+
+body{
+    background: linear-gradient(
+        180deg,
+        #0D0D0D 0%,
+        #141414 45%,
+        #0D0D0D 100%
+    );
+
+    color: #FBEDA3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    min-height: 100vh;
+}
+
+.contenedor{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.tituloSeccion{
+
+    text-align:center;
+
+    font-size:5.5rem;
+
+    color:$dorado;
+
+    font-style:italic;
+
+    margin-bottom:2rem;
+
+}
+
+.descripcionSeccion{
+
+    width:70%;
+
+    margin:0 auto 6rem;
+
+    text-align:center;
+
+    color:$gris;
+
+    font-size:2rem;
+
+    line-height:1.8;
+
+}

@@ -1,0 +1,43 @@
+@use "../base/variables" as *;
+
+/*==========================================
+                FOOTER
+==========================================*/
+
+.footerIndex{
+
+    margin-top:10rem;
+
+    padding:5rem 2rem;
+
+    border-top:1px solid rgba(212,175,55,.15);
+
+    text-align:center;
+
+    background:#111;
+
+}
+
+.footerIndex h2{
+
+    color:$gris;
+
+    font-size:1.7rem;
+
+    font-weight:400;
+
+    margin-bottom:1rem;
+
+}
+
+.footerIndex p{
+
+    color:$dorado;
+
+    font-size:1.5rem;
+
+    letter-spacing:2px;
+
+    margin-top:2rem;
+
+}

@@ -1,0 +1,210 @@
+@use "../base/variables" as *;
+@use "../utilities/mixins" as *;
+
+/*==========================================
+                HEADER
+==========================================*/
+
+.headerMenu{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:2rem 0;
+
+    border-bottom:1px solid rgba(212,175,55,.15);
+
+    @include flex(space-between,center);
+
+}
+
+.logoHeader{
+
+    @include flex(flex-start,center);
+
+    gap:2rem;
+
+    img{
+
+        width:85px;
+
+        transition:$transicion;
+
+        &:hover{
+
+            transform:rotate(-5deg) scale(1.05);
+
+        }
+
+    }
+
+    h1{
+
+        color:$dorado;
+
+        font-size:4rem;
+
+        line-height:1;
+
+        margin-bottom:.5rem;
+
+    }
+
+    p{
+
+        color:$gris;
+
+        font-size:1.5rem;
+
+        letter-spacing:3px;
+
+        text-transform:uppercase;
+
+    }
+
+}
+
+.menu-premium{
+
+    ul{
+
+        display:flex;
+
+        gap:3rem;
+
+    }
+
+}
+
+.navLink{
+
+    color:$texto;
+
+    font-size:1.7rem;
+
+    letter-spacing:1px;
+
+    position:relative;
+
+    transition:$transicion;
+
+    padding-bottom:.6rem;
+
+    &:hover{
+
+        color:$dorado;
+
+    }
+
+    &::after{
+
+        content:"";
+
+        position:absolute;
+
+        left:0;
+
+        bottom:0;
+
+        width:0;
+
+        height:2px;
+
+        background:$dorado;
+
+        transition:$transicion;
+
+    }
+
+    &:hover::after{
+
+        width:100%;
+
+    }
+
+}
+/*==========================================
+        RESPONSIVE HEADER
+==========================================*/
+
+@media(max-width:992px){
+
+    .headerMenu{
+
+        flex-direction:column;
+
+        gap:3rem;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .menu-premium{
+
+        width:100%;
+
+    }
+
+    .menu-premium ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:2rem;
+
+    }
+
+    .logoHeader{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .logoHeader img{
+
+        width:70px;
+
+    }
+
+}
+.navbarAura {
+    background-color: $color-fondo;
+    border-bottom: 1px solid $color-dorado;
+    padding: 1rem 0;
+
+    .logoNavbar {
+        width: 110px;
+        height: auto;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .navbar-nav .navLink {
+        color: $color-texto;
+        font-family: $fuente-principal;
+        margin-left: 1.5rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-dorado;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: $color-dorado;
+
+        &:focus {
+            box-shadow: 0 0 0 0.15rem rgba(212, 175, 55, 0.25);
+        }
+    }
+}

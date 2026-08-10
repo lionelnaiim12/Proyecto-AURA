@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AURA | Vivir la Experiencia</title>
+
+    <link rel="shortcut icon" href="../assets/logo_faviconn.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../scss/style.css">
+
+</head>
+
+<body class="bodyIndex">
+
+<header class="headerMenu">
+
+    <div class="logoHeader">
+
+        <a href="../index.html">
+
+            <img src="../assets/logo_aurap.png" alt="Logo de AURA Cafetería Premium">
+
+        </a>
+
+        <div>
+
+            <h1>AURA</h1>
+
+            <p>Cafetería Premium</p>
+
+        </div>
+
+    </div>
+
+    <nav class="menu-premium">
+
+        <ul>
+
+            <li><a href="../index.html" class="navLink">Inicio</a></li>
+
+            <li><a href="carta.html" class="navLink">Carta</a></li>
+
+            <li><a href="ubicacion.html" class="navLink">Ubicación</a></li>
+
+            <li><a href="contacto.html" class="navLink">Contacto</a></li>
+
+            <li><a href="reservar.html" class="navLink">Reservar</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="reservar">
+
+  <section class="heroReserva">
+
+        <h2>Reservá tu experiencia</h2>
+
+        <p>
+            Elegí el momento perfecto para disfrutar de un café de especialidad en un ambiente único.
+        </p>
+
+    </section>
+
+    <section class="contenedorReserva">
+
+        <form class="formReserva">
+
+            <div class="campo">
+
+                <label for="nombre">Nombre</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingresá tu nombre"
+                    required>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="apellido">Apellido</label>
+
+                <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ingresá tu apellido"
+                    required>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="correo">Correo electrónico</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@email.com"
+                    required>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="fecha">Fecha</label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="hora">Horario</label>
+
+                <select id="hora" name="hora">
+
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+
+                </select>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="personas">Cantidad de personas</label>
+
+                <select id="personas">
+
+                    <option>1 Persona</option>
+                    <option>2 Personas</option>
+                    <option>3 Personas</option>
+                    <option>4 Personas</option>
+                    <option>5 Personas</option>
+                    <option>6 Personas</option>
+
+                </select>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="cafe">Café de preferencia</label>
+
+                <select id="cafe">
+
+                    <option>Espresso</option>
+                    <option>Latte</option>
+                    <option>Capuccino</option>
+                    <option>Mocha</option>
+                    <option>Cold Brew</option>
+                    <option>Flat White</option>
+
+                </select>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="mensaje">Observaciones</label>
+
+                <textarea
+                    id="mensaje"
+                    rows="5"
+                    placeholder="¿Querés contarnos algo antes de tu visita?"></textarea>
+
+            </div>
+
+            <button type="submit" class="btnAura">
+
+                Confirmar Reserva
+
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+
+<footer class="footerIndex">
+
+    <h2>© 2026 AURA Cafetería Premium</h2>
+
+    <h2>Desarrollado por Lionel Muñoz</h2>
+
+    <p>Donde cada taza se convierte en una experiencia.</p>
+
+</footer>
+
+</body>
+
+</html>
