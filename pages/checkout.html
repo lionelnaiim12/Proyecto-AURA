@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../scss/style.css">
 
@@ -21,176 +23,200 @@
 
 <body class="bodyIndex">
 
-<header class="headerMenu">
+    <header class="headerMenu">
 
-    <div class="logoHeader">
+        <div class="logoHeader">
 
-        <a href="../index.html">
+            <a href="../index.html">
 
-            <img src="../assets/logo_aurap.png" alt="Logo de AURA Cafetería Premium">
+                <img src="../assets/logo_aurap.png" alt="Logo de AURA Cafetería Premium">
 
-        </a>
+            </a>
 
-        <div>
+            <div>
 
-            <h1>AURA</h1>
+                <h1>AURA</h1>
 
-            <p>Cafetería Premium</p>
+                <p>Cafetería Premium</p>
+
+            </div>
 
         </div>
 
-    </div>
+        <nav class="navbar navbar-expand-lg menu-premium">
 
-    <nav class="menu-premium">
+            <div class="container-fluid justify-content-center">
 
-        <ul>
+                <ul class="navbar-nav gap-4">
 
-            <li><a href="../index.html" class="navLink">Inicio</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
 
-            <li><a href="carta.html" class="navLink">Carta</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="carta.html">
+                            Carta
+                        </a>
+                    </li>
 
-            <li><a href="ubicacion.html" class="navLink">Ubicación</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="ubicacion.html">
+                            Ubicación
+                        </a>
+                    </li>
 
-            <li><a href="contacto.html" class="navLink">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
 
-            <li><a href="reservar.html" class="navLink">Reservar</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink" href="reservar.html">
+                            Reservar
+                        </a>
+                    </li>
 
-        </ul>
+                </ul>
 
-    </nav>
+            </div>
 
-</header>
+        </nav>
 
+    </header>
 
-<main class="checkoutContainer">
 
-<section class="checkoutTitulo">
+    <main class="checkoutContainer">
 
-<h1>Confirmá tu experiencia</h1>
+        <section class="checkoutTitulo">
 
-<p>
+            <h1>Confirmá tu experiencia</h1>
 
-Estás a un paso de disfrutar un momento único junto a AURA.
+            <p>
 
-</p>
+                Estás a un paso de disfrutar un momento único junto a AURA.
 
-</section>
+            </p>
 
+        </section>
 
 
-<section class="checkoutGrid">
 
-<!-- DATOS -->
+        <section class="checkoutGrid">
 
-<div class="datosCliente">
+            <!-- DATOS -->
 
-<h2>Información Personal</h2>
+            <div class="datosCliente">
 
-<form>
+                <h2>Información Personal</h2>
 
-<label>Nombre</label>
+                <form>
 
-<input type="text" placeholder="Lionel">
+                    <label>Nombre</label>
 
-<label>Apellido</label>
+                    <input type="text" placeholder="Lionel">
 
-<input type="text" placeholder="Muñoz">
+                    <label>Apellido</label>
 
-<label>Correo</label>
+                    <input type="text" placeholder="Muñoz">
 
-<input type="email" placeholder="correo@email.com">
+                    <label>Correo</label>
 
-<label>Teléfono</label>
+                    <input type="email" placeholder="correo@email.com">
 
-<input type="tel" placeholder="+54">
+                    <label>Teléfono</label>
 
-</form>
+                    <input type="tel" placeholder="+54">
 
-</div>
+                </form>
 
+            </div>
 
 
-<!-- RESUMEN -->
 
-<div class="resumenPedido">
+            <!-- RESUMEN -->
 
-<h2>Tu experiencia</h2>
+            <div class="resumenPedido">
 
-<img src="../assets/imgs/espresso.jpg" alt="Espresso">
+                <h2>Tu experiencia</h2>
 
-<h3>Espresso Premium</h3>
+                <img src="../assets/imgs/espresso.jpg" alt="Espresso">
 
-<p>
+                <h3>Espresso Premium</h3>
 
-Cantidad: 1
+                <p>
 
-</p>
+                    Cantidad: 1
 
-<h4>Total</h4>
+                </p>
 
-<span>$4.500</span>
+                <h4>Total</h4>
 
-</div>
+                <span>$4.500</span>
 
-</section>
+            </div>
 
+        </section>
 
 
-<section class="tarjetaPago">
 
-<h2>Método de Pago</h2>
+        <section class="tarjetaPago">
 
-<form>
+            <h2>Método de Pago</h2>
 
-<label>Número de tarjeta</label>
+            <form>
 
-<input type="text" placeholder="1234 5678 9012 3456">
+                <label>Número de tarjeta</label>
 
-<label>Nombre del titular</label>
+                <input type="text" placeholder="1234 5678 9012 3456">
 
-<input type="text">
+                <label>Nombre del titular</label>
 
-<div class="filaTarjeta">
+                <input type="text">
 
-<div>
+                <div class="filaTarjeta">
 
-<label>Vencimiento</label>
+                    <div>
 
-<input type="text" placeholder="MM/AA">
+                        <label>Vencimiento</label>
 
-</div>
+                        <input type="text" placeholder="MM/AA">
 
-<div>
+                    </div>
 
-<label>CVV</label>
+                    <div>
 
-<input type="password" placeholder="123">
+                        <label>CVV</label>
 
-</div>
+                        <input type="password" placeholder="123">
 
-</div>
+                    </div>
 
-<a href="./gracias.html" class="botonReserva">
+                </div>
 
-Confirmar experiencia
+                <a href="./gracias.html" class="botonReserva">
 
-</a>
+                    Confirmar experiencia
 
-</form>
+                </a>
 
-</section>
+            </form>
 
-</main>
+        </section>
 
-<footer class="footerIndex">
+    </main>
 
-    <h2>© 2026 AURA Cafetería Premium</h2>
+    <footer class="footerIndex">
 
-    <h2>Desarrollado por Lionel Muñoz</h2>
+        <h2>© 2026 AURA Cafetería Premium</h2>
 
-    <p>Donde cada taza se convierte en una experiencia.</p>
+        <h2>Desarrollado por Lionel Muñoz</h2>
 
-</footer>
+        <p>Donde cada taza se convierte en una experiencia.</p>
+
+    </footer>
 
 </body>
 

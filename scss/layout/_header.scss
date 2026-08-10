@@ -66,13 +66,14 @@
 
 }
 
-.menu-premium{
+.menu-premium {
 
-    ul{
+    ul {
 
-        display:flex;
+        align-items: center;
 
-        gap:3rem;
+        margin: 0;
+        padding: 0;
 
     }
 
@@ -173,38 +174,4 @@
 
     }
 
-}
-.navbarAura {
-    background-color: $color-fondo;
-    border-bottom: 1px solid $color-dorado;
-    padding: 1rem 0;
-
-    .logoNavbar {
-        width: 110px;
-        height: auto;
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: scale(1.05);
-        }
-    }
-
-    .navbar-nav .navLink {
-        color: $color-texto;
-        font-family: $fuente-principal;
-        margin-left: 1.5rem;
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: $color-dorado;
-        }
-    }
-
-    .navbar-toggler {
-        border-color: $color-dorado;
-
-        &:focus {
-            box-shadow: 0 0 0 0.15rem rgba(212, 175, 55, 0.25);
-        }
-    }
 }
