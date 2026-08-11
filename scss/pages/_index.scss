@@ -44,28 +44,20 @@
 
 }
 
-.logo-seccion{
-
+.logo-seccion {
     @include flex;
+    margin: 6rem 0;
 
-    margin:6rem 0;
+    img {
+        width: 800px;
+        height: auto;
+        transition: $transicion;
 
-    img{
-
-        width:240px;
-
-        transition:$transicion;
-
-        &:hover{
-
-            transform:scale(1.05);
-
+        &:hover {
+            transform: scale(1.2);
         }
-
     }
-
 }
-
 .fraseAura{
 
     width:80%;
@@ -251,6 +243,5 @@
 
         grid-template-columns:1fr;
 
-    }
-
+      }
 }
