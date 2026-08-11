@@ -105,19 +105,23 @@ body {
   align-items: center;
   gap: 2rem;
 }
+
 .logoHeader img {
   width: 85px;
   transition: 0.35s ease;
 }
+
 .logoHeader img:hover {
   transform: rotate(-5deg) scale(1.05);
 }
+
 .logoHeader h1 {
   color: #D4AF37;
   font-size: 4rem;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
+
 .logoHeader p {
   color: #BDBDBD;
   font-size: 1.5rem;
@@ -138,9 +142,11 @@ body {
   transition: 0.35s ease;
   padding-bottom: 0.6rem;
 }
+
 .navLink:hover {
   color: #D4AF37;
 }
+
 .navLink::after {
   content: "";
   position: absolute;
@@ -151,6 +157,7 @@ body {
   background: #D4AF37;
   transition: 0.35s ease;
 }
+
 .navLink:hover::after {
   width: 100%;
 }
@@ -214,12 +221,14 @@ body {
   margin: 8rem auto 5rem;
   text-align: center;
 }
+
 .headerIndex h2 {
   color: #D4AF37;
   font-size: 5rem;
   font-style: italic;
   margin-bottom: 2rem;
 }
+
 .headerIndex p {
   width: 75%;
   margin: auto;
@@ -234,10 +243,12 @@ body {
   align-items: center;
   margin: 6rem 0;
 }
+
 .logo-seccion img {
   width: 240px;
   transition: 0.35s ease;
 }
+
 .logo-seccion img:hover {
   transform: scale(1.05);
 }
@@ -247,11 +258,13 @@ body {
   margin: 8rem auto;
   text-align: center;
 }
+
 .fraseAura h2 {
   color: #D4AF37;
   font-size: 4rem;
   margin-bottom: 2rem;
 }
+
 .fraseAura p {
   color: #BDBDBD;
   font-size: 2rem;
@@ -279,16 +292,19 @@ body {
   text-align: center;
   transition: 0.35s ease;
 }
+
 .cardEsencia h3 {
   color: #D4AF37;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
+
 .cardEsencia p {
   color: #BDBDBD;
   font-size: 1.8rem;
   line-height: 1.8;
 }
+
 .cardEsencia:hover {
   transform: translateY(-10px);
   border-color: #D4AF37;
@@ -348,12 +364,14 @@ body {
   margin: 7rem auto;
   text-align: center;
 }
+
 .heroCarta h2 {
   font-size: 5rem;
   color: #D4AF37;
   font-style: italic;
   margin-bottom: 2rem;
 }
+
 .heroCarta p {
   color: #BDBDBD;
   font-size: 2rem;
@@ -372,17 +390,20 @@ body {
 .cardCafe {
   overflow: hidden;
 }
+
 .cardCafe:hover {
   transform: translateY(-12px);
   border-color: #D4AF37;
 }
+
 .cardCafe img {
   width: 100%;
   height: 270px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.35s ease;
 }
+
 .cardCafe:hover img {
   transform: scale(1.08);
 }
@@ -391,17 +412,20 @@ body {
   padding: 2.5rem;
   text-align: center;
 }
+
 .contenidoCard h3 {
   color: #D4AF37;
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
 }
+
 .contenidoCard p {
   color: #BDBDBD;
   font-size: 1.7rem;
   line-height: 1.7;
   margin-bottom: 2rem;
 }
+
 .contenidoCard span {
   display: block;
   color: #FBEDA3;
@@ -423,6 +447,7 @@ body {
   font-weight: 600;
   transition: 0.35s ease;
 }
+
 .btnAura:hover {
   background: #D4AF37;
   color: #0D0D0D;
@@ -452,12 +477,14 @@ body {
   text-align: center;
   margin: 7rem 0;
 }
+
 .heroUbicacion h2 {
   font-size: 5rem;
   color: #D4AF37;
   font-style: italic;
   margin-bottom: 2rem;
 }
+
 .heroUbicacion p {
   width: 70%;
   margin: auto;
@@ -477,23 +504,27 @@ body {
 .textoUbicacion {
   padding: 4rem;
 }
+
 .textoUbicacion h3 {
   color: #D4AF37;
   font-size: 3rem;
   margin-bottom: 2rem;
 }
+
 .textoUbicacion p {
   color: #BDBDBD;
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 3rem;
 }
+
 .textoUbicacion ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 4rem;
 }
+
 .textoUbicacion li {
   color: #F5F5F5;
   font-size: 1.7rem;
@@ -537,12 +568,14 @@ body {
   text-align: center;
   margin: 7rem 0;
 }
+
 .heroContacto h2 {
   color: #D4AF37;
   font-size: 5rem;
   font-style: italic;
   margin-bottom: 2rem;
 }
+
 .heroContacto p {
   width: 70%;
   margin: auto;
@@ -561,21 +594,25 @@ body {
 .infoContacto {
   padding: 4rem;
 }
+
 .infoContacto h3 {
   color: #D4AF37;
   font-size: 3rem;
   margin-bottom: 2rem;
 }
+
 .infoContacto p {
   color: #BDBDBD;
   font-size: 1.8rem;
   margin-bottom: 3rem;
 }
+
 .infoContacto ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .infoContacto li {
   font-size: 1.7rem;
   color: #F5F5F5;
@@ -653,12 +690,14 @@ body {
   text-align: center;
   margin: 7rem 0;
 }
+
 .heroReserva h2 {
   font-size: 5rem;
   color: #D4AF37;
   font-style: italic;
   margin-bottom: 2rem;
 }
+
 .heroReserva p {
   color: #BDBDBD;
   font-size: 2rem;
@@ -721,11 +760,13 @@ textarea {
   font-weight: 600;
   transition: 0.35s ease;
 }
+
 .btnAura:hover {
   background: #D4AF37;
   color: #0D0D0D;
   transform: translateY(-3px);
 }
+
 .btnAura {
   margin-top: 2rem;
   align-self: center;
@@ -738,4 +779,6 @@ textarea {
   .formReserva {
     padding: 2.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} 
+
+/*# sourceMappingURL=style.css.map */
