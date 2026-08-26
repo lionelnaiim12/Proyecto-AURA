@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -6,9 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO -->
+    <meta name="description"
+        content="Confirmá tu experiencia en AURA Cafetería Premium y completá tus datos para finalizar tu pedido.">
+
     <title>AURA | Confirmar Experiencia</title>
 
-    <link rel="shortcut icon" href="../assets/logo_faviconn.png">
+    <link rel="shortcut icon" href="../assets/logo_faviconn.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +32,7 @@
 
         <div class="logoHeader">
 
-            <a href="../index.html">
+            <a href="../index.html" aria-label="Volver al inicio de AURA">
 
                 <img src="../assets/logo_aurap.png" alt="Logo de AURA Cafetería Premium">
 
@@ -43,7 +48,7 @@
 
         </div>
 
-        <nav class="navbar navbar-expand-lg menu-premium">
+        <nav class="navbar navbar-expand-lg menu-premium" aria-label="Navegación principal">
 
             <div class="container-fluid justify-content-center">
 
@@ -87,69 +92,84 @@
 
     </header>
 
-
     <main class="checkoutContainer">
 
         <section class="checkoutTitulo">
 
-            <h1>Confirmá tu experiencia</h1>
+            <h2>Confirmá tu experiencia</h2>
 
             <p>
-
                 Estás a un paso de disfrutar un momento único junto a AURA.
-
             </p>
 
         </section>
 
-
-
         <section class="checkoutGrid">
 
             <!-- DATOS -->
-
             <div class="datosCliente">
 
                 <h2>Información Personal</h2>
 
                 <form>
 
-                    <label>Nombre</label>
+                    <label for="nombre">Nombre</label>
 
-                    <input type="text" placeholder="Lionel">
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Lionel"
+                        autocomplete="given-name"
+                        required>
 
-                    <label>Apellido</label>
+                    <label for="apellido">Apellido</label>
 
-                    <input type="text" placeholder="Muñoz">
+                    <input
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        placeholder="Muñoz"
+                        autocomplete="family-name"
+                        required>
 
-                    <label>Correo</label>
+                    <label for="correo">Correo</label>
 
-                    <input type="email" placeholder="correo@email.com">
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="correo@email.com"
+                        autocomplete="email"
+                        required>
 
-                    <label>Teléfono</label>
+                    <label for="telefono">Teléfono</label>
 
-                    <input type="tel" placeholder="+54">
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="+54"
+                        autocomplete="tel"
+                        required>
 
                 </form>
 
             </div>
 
-
-
             <!-- RESUMEN -->
-
             <div class="resumenPedido">
 
                 <h2>Tu experiencia</h2>
 
-                <img src="../assets/imgs/espresso.jpg" alt="Espresso">
+                <img
+                    src="../assets/imgs/espresso.jpg"
+                    alt="Taza de Espresso Premium">
 
                 <h3>Espresso Premium</h3>
 
                 <p>
-
                     Cantidad: 1
-
                 </p>
 
                 <h4>Total</h4>
@@ -160,47 +180,66 @@
 
         </section>
 
-
-
         <section class="tarjetaPago">
 
             <h2>Método de Pago</h2>
 
             <form>
 
-                <label>Número de tarjeta</label>
+                <label for="numeroTarjeta">Número de tarjeta</label>
 
-                <input type="text" placeholder="1234 5678 9012 3456">
+                <input
+                    type="text"
+                    id="numeroTarjeta"
+                    name="numeroTarjeta"
+                    placeholder="1234 5678 9012 3456"
+                    autocomplete="cc-number"
+                    required>
 
-                <label>Nombre del titular</label>
+                <label for="titular">Nombre del titular</label>
 
-                <input type="text">
+                <input
+                    type="text"
+                    id="titular"
+                    name="titular"
+                    autocomplete="cc-name"
+                    required>
 
                 <div class="filaTarjeta">
 
                     <div>
 
-                        <label>Vencimiento</label>
+                        <label for="vencimiento">Vencimiento</label>
 
-                        <input type="text" placeholder="MM/AA">
+                        <input
+                            type="text"
+                            id="vencimiento"
+                            name="vencimiento"
+                            placeholder="MM/AA"
+                            autocomplete="cc-exp"
+                            required>
 
                     </div>
 
                     <div>
 
-                        <label>CVV</label>
+                        <label for="cvv">CVV</label>
 
-                        <input type="password" placeholder="123">
+                        <input
+                            type="password"
+                            id="cvv"
+                            name="cvv"
+                            placeholder="123"
+                            autocomplete="cc-csc"
+                            required>
 
                     </div>
 
                 </div>
 
-                <a href="./gracias.html" class="botonReserva">
-
+                <button type="submit" class="botonReserva">
                     Confirmar experiencia
-
-                </a>
+                </button>
 
             </form>
 
@@ -214,7 +253,9 @@
 
         <h2>Desarrollado por Lionel Muñoz</h2>
 
-        <p>Donde cada taza se convierte en una experiencia.</p>
+        <p>
+            Donde cada taza se convierte en una experiencia.
+        </p>
 
     </footer>
 
