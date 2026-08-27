@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
+    <!-- *SEO* -->
     <meta name="description"
         content="Confirmá tu experiencia en AURA Cafetería Premium y completá tus datos para finalizar tu pedido.">
 
@@ -17,104 +15,65 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="../scss/style.css">
-
 </head>
 
 <body class="bodyIndex">
 
+    <!-- *HEADER* -->
     <header class="headerMenu">
-
         <div class="logoHeader">
-
             <a href="../index.html" aria-label="Volver al inicio de AURA">
-
                 <img src="../assets/logo_aurap.png" alt="Logo de AURA Cafetería Premium">
-
             </a>
-
             <div>
-
-                <h1>AURA</h1>
-
+                <span>AURA</span>
                 <p>Cafetería Premium</p>
-
             </div>
-
         </div>
 
         <nav class="navbar navbar-expand-lg menu-premium" aria-label="Navegación principal">
-
             <div class="container-fluid justify-content-center">
-
                 <ul class="navbar-nav gap-4">
-
                     <li class="nav-item">
-                        <a class="nav-link navLink" href="../index.html">
-                            Inicio
-                        </a>
+                        <a class="nav-link navLink" href="../index.html">Inicio</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link navLink" href="carta.html">
-                            Carta
-                        </a>
+                        <a class="nav-link navLink" href="carta.html">Carta</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link navLink" href="ubicacion.html">
-                            Ubicación
-                        </a>
+                        <a class="nav-link navLink" href="ubicacion.html">Ubicación</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link navLink" href="contacto.html">
-                            Contacto
-                        </a>
+                        <a class="nav-link navLink" href="contacto.html">Contacto</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link navLink" href="reservar.html">
-                            Reservar
-                        </a>
+                        <a class="nav-link navLink" href="reservar.html">Reservar</a>
                     </li>
-
                 </ul>
-
             </div>
-
         </nav>
-
     </header>
 
+    <!-- *MAIN* -->
     <main class="checkoutContainer">
 
         <section class="checkoutTitulo">
-
-            <h2>Confirmá tu experiencia</h2>
-
-            <p>
-                Estás a un paso de disfrutar un momento único junto a AURA.
-            </p>
-
+            <h1>Confirmá tu experiencia</h1>
+            <p>Estás a un paso de disfrutar un momento único junto a AURA.</p>
         </section>
 
         <section class="checkoutGrid">
 
-            <!-- DATOS -->
+            <!-- *DATOS* -->
             <div class="datosCliente">
-
                 <h2>Información Personal</h2>
-
                 <form>
-
                     <label for="nombre">Nombre</label>
-
                     <input
                         type="text"
                         id="nombre"
@@ -124,7 +83,6 @@
                         required>
 
                     <label for="apellido">Apellido</label>
-
                     <input
                         type="text"
                         id="apellido"
@@ -133,8 +91,7 @@
                         autocomplete="family-name"
                         required>
 
-                    <label for="correo">Correo</label>
-
+                    <label for="correo">Correo Electrónico</label>
                     <input
                         type="email"
                         id="correo"
@@ -144,7 +101,6 @@
                         required>
 
                     <label for="telefono">Teléfono</label>
-
                     <input
                         type="tel"
                         id="telefono"
@@ -152,42 +108,29 @@
                         placeholder="+54"
                         autocomplete="tel"
                         required>
-
                 </form>
-
             </div>
 
-            <!-- RESUMEN -->
+            <!-- *RESUMEN* -->
             <div class="resumenPedido">
-
                 <h2>Tu experiencia</h2>
-
-                <img
-                    src="../assets/imgs/espresso.jpg"
-                    alt="Taza de Espresso Premium">
-
+                <img src="../assets/imgs/espresso.jpg" alt="Taza de Espresso Premium">
+                
                 <h3>Espresso Premium</h3>
+                <p>Cantidad: 1</p>
 
-                <p>
-                    Cantidad: 1
-                </p>
-
-                <h4>Total</h4>
-
-                <span>$4.500</span>
-
+                <div class="totalPedido">
+                    <p class="labelTotal">Total:</p>
+                    <span class="montoTotal">$4.500</span>
+                </div>
             </div>
 
         </section>
 
         <section class="tarjetaPago">
-
             <h2>Método de Pago</h2>
-
             <form>
-
                 <label for="numeroTarjeta">Número de tarjeta</label>
-
                 <input
                     type="text"
                     id="numeroTarjeta"
@@ -197,7 +140,6 @@
                     required>
 
                 <label for="titular">Nombre del titular</label>
-
                 <input
                     type="text"
                     id="titular"
@@ -206,11 +148,8 @@
                     required>
 
                 <div class="filaTarjeta">
-
                     <div>
-
                         <label for="vencimiento">Vencimiento</label>
-
                         <input
                             type="text"
                             id="vencimiento"
@@ -218,13 +157,10 @@
                             placeholder="MM/AA"
                             autocomplete="cc-exp"
                             required>
-
                     </div>
 
                     <div>
-
                         <label for="cvv">CVV</label>
-
                         <input
                             type="password"
                             id="cvv"
@@ -232,31 +168,22 @@
                             placeholder="123"
                             autocomplete="cc-csc"
                             required>
-
                     </div>
-
                 </div>
 
                 <button type="submit" class="botonReserva">
                     Confirmar experiencia
                 </button>
-
             </form>
-
         </section>
 
     </main>
 
+    <!-- *FOOTER* -->
     <footer class="footerIndex">
-
-        <h2>© 2026 AURA Cafetería Premium</h2>
-
-        <h2>Desarrollado por Lionel Muñoz</h2>
-
-        <p>
-            Donde cada taza se convierte en una experiencia.
-        </p>
-
+        <p>© 2026 AURA Cafetería Premium</p>
+        <p>Desarrollado por Lionel Muñoz</p>
+        <p>Donde cada taza se convierte en una experiencia.</p>
     </footer>
 
 </body>

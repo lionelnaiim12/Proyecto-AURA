@@ -1,57 +1,63 @@
 @use "../base/variables" as *;
 
 /*==========================================
-                MIXINS
+                MIXINS AURA
 ==========================================*/
 
-@mixin flex($justify:center, $align:center){
-
-    display:flex;
-    justify-content:$justify;
-    align-items:$align;
-
+// Centrado y alineación flexible
+@mixin flex($justify: center, $align: center, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
 
-@mixin boton{
+// Botón Premium AURA
+@mixin boton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
+    padding: 1.4rem 3.5rem;
 
-    padding:1.4rem 3.5rem;
+    border: 1px solid $dorado;
+    border-radius: 999px;
 
-    border:1px solid $dorado;
-    border-radius:999px;
+    background: transparent;
 
-    background:transparent;
+    color: $dorado;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
-    color:$dorado;
+    transition: $transicion;
 
-    font-size:1.6rem;
-
-    font-weight:600;
-
-    transition:$transicion;
-
-    &:hover{
-
-        background:$dorado;
-        color:$fondo;
-
-        transform:translateY(-3px);
-
+    &:hover {
+        background: $dorado;
+        color: $fondo;
+        transform: translateY(-3px);
+        box-shadow: $sombra;
     }
-
 }
 
-@mixin titulo{
+// Estilo de Títulos Principales
+@mixin titulo {
+    font-family: $fuente-principal;
+    color: $dorado;
+    font-size: 5rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.2;
 
-    color:$dorado;
+    @media (max-width: 768px) {
+        font-size: 3.6rem;
+    }
+}
 
-    font-size:5rem;
-
-    font-style:italic;
-
-    text-align:center;
-
+// Helper para Media Queries rápidas
+@mixin responsive($width) {
+    @media (max-width: $width) {
+        @content;
+    }
 }

@@ -1,43 +1,44 @@
 @use "../base/variables" as *;
+@use "../utilities/mixins" as *;
 
 /*==========================================
-                FOOTER
+                FOOTER AURA
 ==========================================*/
 
-.footerIndex{
+.footerIndex {
+    margin-top: 10rem;
+    padding: 5rem 2rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    text-align: center;
+    background: $fondo-secundario;
 
-    margin-top:10rem;
+    p {
+        color: $gris;
+        font-family: $fuente-secundaria;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 0.8rem;
 
-    padding:5rem 2rem;
-
-    border-top:1px solid rgba(212,175,55,.15);
-
-    text-align:center;
-
-    background:#111;
-
+        // Frase final de cierre en dorado
+        &:last-child {
+            color: $dorado;
+            font-family: $fuente-principal;
+            font-size: 1.8rem;
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+    }
 }
 
-.footerIndex h2{
+/*==========================================
+            RESPONSIVE FOOTER
+==========================================*/
 
-    color:$gris;
-
-    font-size:1.7rem;
-
-    font-weight:400;
-
-    margin-bottom:1rem;
-
-}
-
-.footerIndex p{
-
-    color:$dorado;
-
-    font-size:1.5rem;
-
-    letter-spacing:2px;
-
-    margin-top:2rem;
-
+@media (max-width: 768px) {
+    .footerIndex {
+        margin-top: 6rem;
+        padding: 4rem 1.5rem;
+    }
 }

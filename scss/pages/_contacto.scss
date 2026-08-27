@@ -6,211 +6,131 @@
                 CONTACTO
 ==========================================*/
 
-.contacto{
-
-    width:90%;
-
-    max-width:1400px;
-
-    margin:auto;
-
+.contacto {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
 }
 
-.heroContacto{
+.heroContacto {
+    text-align: center;
+    margin: 7rem 0;
 
-    text-align:center;
-
-    margin:7rem 0;
-
-    h2{
-
-        color:$dorado;
-
-        font-size:5rem;
-
-        font-style:italic;
-
-        margin-bottom:2rem;
-
+    h2 {
+        color: $dorado;
+        font-size: 5rem;
+        font-style: italic;
+        margin-bottom: 2rem;
     }
 
-    p{
-
-        width:70%;
-
-        margin:auto;
-
-        color:$gris;
-
-        font-size:2rem;
-
-        line-height:1.8;
-
+    p {
+        width: 70%;
+        margin: auto;
+        color: $gris;
+        font-size: 2rem;
+        line-height: 1.8;
     }
-
 }
 
-.contenedorContacto{
-
-    display:grid;
-
-    grid-template-columns:1fr 1.2fr;
-
-    gap:4rem;
-
-    margin-bottom:8rem;
-
+.contenedorContacto {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    margin-bottom: 8rem;
 }
 
-.infoContacto{
-
+.infoContacto {
     @extend %card;
+    padding: 4rem;
 
-    padding:4rem;
-
-    h3{
-
-        color:$dorado;
-
-        font-size:3rem;
-
-        margin-bottom:2rem;
-
+    h3 {
+        color: $dorado;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 
-    p{
-
-        color:$gris;
-
-        font-size:1.8rem;
-
-        margin-bottom:3rem;
-
+    p {
+        color: $gris;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
     }
 
-    ul{
-
-        display:flex;
-
-        flex-direction:column;
-
-        gap:2rem;
-
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    li{
-
-        font-size:1.7rem;
-
-        color:$texto;
-
+    li {
+        font-size: 1.7rem;
+        color: $texto;
     }
-
 }
 
-.formContacto{
-
+.formContacto {
     @extend %card;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
-    padding:4rem;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:2rem;
-
-}
-
-.formContacto .campo{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:.8rem;
-
-}
-
-.formContacto label{
-
-    color:$dorado;
-
-    font-size:1.7rem;
-
-}
-
-.formContacto input,
-.formContacto textarea{
-
-    background:$fondo;
-
-    border:1px solid $borde;
-
-    border-radius:12px;
-
-    color:$texto;
-
-    padding:1.5rem;
-
-    font-size:1.6rem;
-
-    transition:$transicion;
-
-}
-
-.formContacto input:focus,
-.formContacto textarea:focus{
-
-    outline:none;
-
-    border-color:$dorado;
-
-    box-shadow:0 0 15px rgba(212,175,55,.25);
-
-}
-
-.formContacto textarea{
-
-    resize:vertical;
-
-    min-height:160px;
-
-}
-
-.formContacto .btnAura{
-
-    margin-top:2rem;
-
-    align-self:center;
-
-}
-@media(max-width:992px){
-
-    .contenedorContacto{
-
-        grid-template-columns:1fr;
-
+    .campo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
     }
 
+    label {
+        color: $dorado;
+        font-size: 1.7rem;
+    }
+
+    input,
+    textarea {
+        background: $fondo;
+        border: 1px solid $borde;
+        border-radius: 12px;
+        color: $texto;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        transition: $transicion;
+
+        &:focus {
+            outline: none;
+            border-color: $dorado;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 160px;
+    }
+
+    .btnAura {
+        margin-top: 2rem;
+        align-self: center;
+    }
 }
 
-@media(max-width:768px){
+/*==========================================
+            RESPONSIVE CONTACTO
+==========================================*/
 
-    .heroContacto{
+@media (max-width: 992px) {
+    .contenedorContacto {
+        grid-template-columns: 1fr;
+    }
+}
 
-        h2{
-
-            font-size:3.8rem;
-
+@media (max-width: 768px) {
+    .heroContacto {
+        h2 {
+            font-size: 3.8rem;
         }
 
-        p{
-
-            width:100%;
-
+        p {
+            width: 100%;
         }
-
     }
-
 }

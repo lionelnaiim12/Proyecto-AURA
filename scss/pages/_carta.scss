@@ -3,156 +3,129 @@
 @use "../utilities/extends" as *;
 
 /*==========================================
-                CARTA
+                CARTA AURA
 ==========================================*/
 
-.heroCarta{
+.heroCarta {
+    width: 85%;
+    margin: 6rem auto 4rem;
+    text-align: center;
 
-    width:80%;
-
-    margin:7rem auto;
-
-    text-align:center;
-
-    h2{
-
-        font-size:5rem;
-
-        color:$dorado;
-
-        font-style:italic;
-
-        margin-bottom:2rem;
-
+    h1, h2 {
+        font-family: $fuente-principal;
+        color: $dorado;
+        font-size: 4.5rem;
+        font-style: italic;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
     }
 
-    p{
-
-        color:$gris;
-
-        font-size:2rem;
-
-        line-height:1.8;
-
+    p {
+        width: 70%;
+        margin: auto;
+        font-size: 2rem;
+        line-height: 1.8;
+        color: $gris;
+        font-family: $fuente-secundaria;
     }
-
 }
 
-.gridCarta{
-
-    width:90%;
-
-    max-width:1400px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:3rem;
-
+.gridCarta {
+    width: 90%;
+    max-width: 1300px;
+    margin: 4rem auto 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 }
 
-.cardCafe{
-
+.cardCafe {
     @extend %card;
+    overflow: hidden;
+    transition: $transicion;
 
-    overflow:hidden;
-
-    &:hover{
-
-        transform:translateY(-12px);
-
-        border-color:$dorado;
-
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: $transicion;
     }
 
-    img{
+    .contenidoCard {
+        padding: 2.5rem;
+        text-align: center;
 
-        width:100%;
+        h3 {
+            font-family: $fuente-principal;
+            color: $dorado;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
 
-        height:270px;
+        p {
+            color: $gris;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
 
-        object-fit:cover;
+        span {
+            display: block;
+            color: $dorado;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
 
-        transition:$transicion;
-
+        .btnAura {
+            @include boton;
+        }
     }
 
-    &:hover img{
+    &:hover {
+        transform: translateY(-8px);
+        border-color: $dorado;
+        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
 
-        transform:scale(1.08);
-
+        img {
+            transform: scale(1.05);
+        }
     }
-
 }
 
-.contenidoCard{
+/*==========================================
+            RESPONSIVE CARTA
+==========================================*/
 
-    padding:2.5rem;
-
-    text-align:center;
-
-    h3{
-
-        color:$dorado;
-
-        font-size:2.8rem;
-
-        margin-bottom:1.5rem;
-
+@media (max-width: 992px) {
+    .gridCarta {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    p{
+    .heroCarta {
+        h1, h2 {
+            font-size: 3.8rem;
+        }
 
-        color:$gris;
-
-        font-size:1.7rem;
-
-        line-height:1.7;
-
-        margin-bottom:2rem;
-
+        p {
+            width: 85%;
+        }
     }
-
-    span{
-
-        display:block;
-
-        color:$dorado-claro;
-
-        font-size:2.5rem;
-
-        margin-bottom:2rem;
-
-        font-weight:bold;
-
-    }
-
 }
 
-.btnAura{
-
-    @include boton;
-
-}
-@media(max-width:992px){
-
-    .gridCarta{
-
-        grid-template-columns:repeat(2,1fr);
-
+@media (max-width: 768px) {
+    .gridCarta {
+        grid-template-columns: 1fr;
     }
 
-}
+    .heroCarta {
+        h1, h2 {
+            font-size: 3.2rem;
+        }
 
-@media(max-width:768px){
-
-    .gridCarta{
-
-        grid-template-columns:1fr;
-
+        p {
+            width: 100%;
+            font-size: 1.7rem;
+        }
     }
-
 }

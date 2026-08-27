@@ -14,36 +14,50 @@
 
     <link rel="shortcut icon" href="./assets/logo_faviconn.png" type="image/x-icon">
 
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
         crossorigin="anonymous">
-
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body class="bodyIndex">
 
-    <header class="aura-navbar">
+    <!-- *HEADER* -->
+    <header class="headerMenu">
+        <div class="logoHeader">
+            <a href="./index.html" aria-label="Volver al inicio de AURA">
+                <img src="./assets/logo_aurap.png" alt="Logo de AURA Cafetería Premium">
+            </a>
+            <div>
+                <span>AURA</span>
+                <p>Cafetería Premium</p>
+            </div>
+        </div>
+
         <nav class="navbar navbar-expand-lg menu-premium" aria-label="Navegación principal">
             <div class="container-fluid justify-content-center">
                 <ul class="navbar-nav gap-4">
                     <li class="nav-item">
                         <a class="nav-link navLink" href="index.html">Inicio</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link navLink" href="pages/carta.html">Carta</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link navLink" href="pages/ubicacion.html">Ubicación</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link navLink" href="pages/contacto.html">Contacto</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link navLink" href="pages/reservar.html">Reservar</a>
                     </li>
@@ -52,11 +66,11 @@
         </nav>
     </header>
 
+    <!-- *MAIN* -->
     <main id="mainIndex">
 
         <section class="headerIndex">
             <h1>Bienvenido a AURA, la expresión más refinada del café.</h1>
-
             <p>
                 Cada taza refleja nuestra pasión por la calidad, el aroma y el arte de los pequeños detalles.
                 Viví una experiencia donde el café se convierte en un momento inolvidable.
@@ -71,7 +85,6 @@
 
         <section class="fraseAura">
             <h2>Más que un café, una experiencia.</h2>
-
             <p>
                 Descubrí sabores cuidadosamente seleccionados, un ambiente elegante
                 y una atención pensada para que cada visita sea única.
@@ -82,7 +95,6 @@
             <h2 class="tituloSeccion">Nuestra Esencia</h2>
 
             <div class="contenedorEsencia">
-
                 <article class="cardEsencia">
                     <h3>Café de Especialidad</h3>
                     <p>
@@ -106,17 +118,18 @@
                         acompañan cada encuentro.
                     </p>
                 </article>
-
             </div>
         </section>
 
     </main>
 
+    <!-- *FOOTER* -->
     <footer class="footerIndex">
-        <h2>© 2026 AURA Cafetería Premium</h2>
-        <h2>Desarrollado por Lionel Muñoz</h2>
+        <p>© 2026 AURA Cafetería Premium</p>
+        <p>Desarrollado por Lionel Muñoz</p>
         <p>Donde cada taza se convierte en una experiencia.</p>
     </footer>
 
 </body>
+
 </html>

@@ -2,176 +2,114 @@
 @use "../utilities/mixins" as *;
 
 /*==========================================
-                HEADER
+                HEADER AURA
 ==========================================*/
 
-.headerMenu{
+.headerMenu {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 
-    width:90%;
-    max-width:1400px;
-
-    margin:auto;
-
-    padding:2rem 0;
-
-    border-bottom:1px solid rgba(212,175,55,.15);
-
-    @include flex(space-between,center);
-
+    @include flex(space-between, center);
 }
 
-.logoHeader{
+.logoHeader {
+    @include flex(flex-start, center);
+    gap: 2rem;
 
-    @include flex(flex-start,center);
+    img {
+        width: 85px;
+        height: auto;
+        transition: $transicion;
 
-    gap:2rem;
-
-    img{
-
-        width:85px;
-
-        transition:$transicion;
-
-        &:hover{
-
-            transform:rotate(-5deg) scale(1.05);
-
+        &:hover {
+            transform: rotate(-5deg) scale(1.05);
         }
-
     }
 
-    h1{
-
-        color:$dorado;
-
-        font-size:4rem;
-
-        line-height:1;
-
-        margin-bottom:.5rem;
-
+    span {
+        font-family: $fuente-principal;
+        color: $dorado;
+        font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+        display: block;
     }
 
-    p{
-
-        color:$gris;
-
-        font-size:1.5rem;
-
-        letter-spacing:3px;
-
-        text-transform:uppercase;
-
+    p {
+        color: $gris;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
     }
-
 }
 
 .menu-premium {
-
     ul {
-
         align-items: center;
-
         margin: 0;
         padding: 0;
-
     }
-
 }
 
-.navLink{
+.navLink {
+    color: $texto;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    position: relative;
+    transition: $transicion;
+    padding-bottom: 0.6rem;
 
-    color:$texto;
-
-    font-size:1.7rem;
-
-    letter-spacing:1px;
-
-    position:relative;
-
-    transition:$transicion;
-
-    padding-bottom:.6rem;
-
-    &:hover{
-
-        color:$dorado;
-
+    &:hover {
+        color: $dorado;
     }
 
-    &::after{
-
-        content:"";
-
-        position:absolute;
-
-        left:0;
-
-        bottom:0;
-
-        width:0;
-
-        height:2px;
-
-        background:$dorado;
-
-        transition:$transicion;
-
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: $dorado;
+        transition: $transicion;
     }
 
-    &:hover::after{
-
-        width:100%;
-
+    &:hover::after {
+        width: 100%;
     }
-
 }
+
 /*==========================================
-        RESPONSIVE HEADER
+            RESPONSIVE HEADER
 ==========================================*/
 
-@media(max-width:992px){
-
-    .headerMenu{
-
-        flex-direction:column;
-
-        gap:3rem;
-
+@media (max-width: 992px) {
+    .headerMenu {
+        flex-direction: column;
+        gap: 3rem;
     }
-
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+    .menu-premium {
+        width: 100%;
 
-    .menu-premium{
-
-        width:100%;
-
+        ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
     }
 
-    .menu-premium ul{
+    .logoHeader {
+        flex-direction: column;
+        text-align: center;
 
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:2rem;
-
+        img {
+            width: 70px;
+        }
     }
-
-    .logoHeader{
-
-        flex-direction:column;
-
-        text-align:center;
-
-    }
-
-    .logoHeader img{
-
-        width:70px;
-
-    }
-
 }

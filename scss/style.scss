@@ -13,3 +13,19 @@
 @use "pages/ubicacion";
 @use "pages/contacto";
 @use "pages/reservar";
+@use "base/variables";
+@use "base/reset";
+@use "base/global";
+
+@use "utilities/mixins";
+@use "utilities/extends";
+
+@use "layout/header";
+@use "layout/footer";
+
+@use "pages/index";
+@use "pages/carta";
+@use "pages/ubicacion";
+@use "pages/contacto";
+@use "pages/reservar";
+@use "pages/checkout";

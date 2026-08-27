@@ -1,52 +1,59 @@
+@use "variables" as *;
+
 /*==========================================
-                RESET
+                RESET AURA
 ==========================================*/
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-
-    font-size:62.5%;
-    scroll-behavior:smooth;
-
+html {
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
 }
 
-img{
-
-    max-width:100%;
-    display:block;
-
+body {
+    background-color: $fondo;
+    color: $texto;
+    font-family: $fuente-secundaria;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-a{
-
-    text-decoration:none;
-    color:inherit;
-
+img, 
+picture, 
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-ul{
-
-    list-style:none;
-
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 
-button{
-
-    cursor:pointer;
-    border:none;
-
+ul, 
+ol {
+    list-style: none;
 }
 
-input,
-textarea,
-select,
-button{
+button, 
+input, 
+textarea, 
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: transparent;
+}
 
-    font-family:inherit;
-
+button {
+    cursor: pointer;
+    border: none;
 }
