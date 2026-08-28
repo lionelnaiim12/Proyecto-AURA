@@ -1,28 +1,19 @@
 @use "../base/variables" as *;
+
 /*==========================================
                 EXTENDS
 ==========================================*/
 
-%card{
-
-    background:$fondo-secundario;
-
-    border:1px solid $borde;
-
-    border-radius:$radio;
-
-    box-shadow:$sombra;
-
-    transition:$transicion;
-
+%card {
+    background: $fondo-secundario;
+    border: 1px solid $borde;
+    border-radius: $radio;
+    box-shadow: $sombra;
+    transition: $transicion;
 }
 
-%centrado{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
+%centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
